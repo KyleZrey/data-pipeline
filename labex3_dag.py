@@ -86,6 +86,7 @@ def validate_price():
 def ingestion_to_db():
     df_merged = pd.read_parquet('/opt/airflow/data/df_11_validated_price.parquet')
         
+    
     dbname = "postgres"
     user ="postgres"
     password ="kyle1018"
@@ -158,7 +159,7 @@ args = {
 dag = DAG(
     dag_id='labex3_dag',
     default_args=args,
-     schedule_interval='@daily'
+     schedule_interval='@hourly'
     
 )
 
