@@ -154,13 +154,14 @@ def ingestion_to_db():
 args = {
     'owner': 'Zrey',
     'start_date': days_ago(0),
+    
 }
 
 dag = DAG(
     dag_id='labex3_dag',
     default_args=args,
-     schedule_interval='@hourly'
-    
+    schedule_interval='@hourly',
+    max_active_runs= 1
 )
 
 with dag:
