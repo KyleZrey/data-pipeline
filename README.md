@@ -1,2 +1,2 @@
-# data_pipelines-labex3
-Creation of data pipelines using Jupyter Notebook, PostgreSQL, and Apache Airflow. A Lab Exercise in our Data Warehousing course.
+# data-pipeline
+Creation of data pipeline using Jupyter Notebook, PostgreSQL, and Apache Airflow. A Lab Exercise in our Data Warehousing (CSELEC1C) course.
